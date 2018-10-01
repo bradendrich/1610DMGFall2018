@@ -29,15 +29,45 @@ public class AddValue : ScriptableObject
     public void SubtractValueToObj (FloatData data)
     {
         ValueObj.Value -= data.Value;
+
+        if (ValueObj.Value <= 0)
+        {
+            EventMin.Invoke();
+        }
+
+        if (ValueObj.Value <= MinValue.Value)
+        {
+            EventMin.Invoke();
+        }
     }
 
     public void MultiplyValueToObj (FloatData data)
     {
         ValueObj.Value *= data.Value;
+
+        if (ValueObj.Value <= 0)
+        {
+            EventMin.Invoke();
+        }
+
+        if (ValueObj.Value <= MinValue.Value)
+        {
+            EventMin.Invoke();
+        }
     }
 
     public void DivideValueToObj (FloatData data)
     {
         ValueObj.Value /= data.Value;
+
+        if (ValueObj.Value <= 0)
+        {
+            EventMin.Invoke();
+        }
+
+        if (ValueObj.Value <= MinValue.Value)
+        {
+            EventMin.Invoke();
+        }
     }
 }
