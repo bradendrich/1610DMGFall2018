@@ -171,7 +171,8 @@ GameObject:
   - component: {fileID: 275978671}
   - component: {fileID: 275978670}
   - component: {fileID: 275978674}
-  m_Layer: 0
+  - component: {fileID: 275978675}
+  m_Layer: 12
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -185,7 +186,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 275978669}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -205,7 +206,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 112d5a47e34ba7941ab0d96c0d5efdd9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -239,8 +240,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 275978669}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.63, y: 0.46, z: 3.72}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -8.63, y: 0.745, z: 3.72}
+  m_LocalScale: {x: 0.6868074, y: 0.6868074, z: 0.6868074}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -253,26 +254,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 275978669}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e4de4611247e91408af1e52bf4f7788, type: 3}
+  m_Script: {fileID: 11500000, guid: 15f5303ba85374b46beee947aba2ab75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: 2970f626c218d494e98ad6f0c64bfe56, type: 2}
-        m_MethodName: SubtractValueToObj
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 747a9a09bbfe42a4a806f05293f1d043,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: FloatData, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+  MoveSpeed: {x: 0, y: 0, z: 0}
+  RotateSpeed: {x: 0, y: 0, z: 0}
+  speed: 100
+  Collectable: {fileID: 275978669}
+  Character: {fileID: 0}
+--- !u!114 &275978675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 275978669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 241a57978de56ba46aaf6a6bc27632d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &285105461
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,7 +942,6 @@ GameObject:
   - component: {fileID: 852718344}
   - component: {fileID: 852718343}
   - component: {fileID: 852718342}
-  - component: {fileID: 852718346}
   m_Layer: 0
   m_Name: Cube (13)
   m_TagString: Untagged
@@ -1017,34 +1016,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &852718346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 852718341}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e4de4611247e91408af1e52bf4f7788, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: 2970f626c218d494e98ad6f0c64bfe56, type: 2}
-        m_MethodName: AddValueToObj
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: c3c9c65459527bf4fb09d13b1da901ed,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: FloatData, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!1 &852837149
 GameObject:
   m_ObjectHideFlags: 0

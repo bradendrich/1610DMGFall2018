@@ -5,7 +5,6 @@ using UnityEngine;
 public class Instancing : MonoBehaviour
 {
     public GameObject instance;
-    //public float WaitTime;
 
     void Update()
     {
