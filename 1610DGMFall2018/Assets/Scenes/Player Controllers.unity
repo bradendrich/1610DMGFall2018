@@ -172,6 +172,7 @@ GameObject:
   - component: {fileID: 275978670}
   - component: {fileID: 275978674}
   - component: {fileID: 275978675}
+  - component: {fileID: 275978676}
   m_Layer: 12
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -273,6 +274,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 241a57978de56ba46aaf6a6bc27632d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &275978676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 275978669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc4f2efaeca67964c8c1c7fed67cf0be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enable:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  Trigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 458a89726018cbb44a10624583d31ae9, type: 2}
+        m_MethodName: AddValueToObj
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: ba031fcf58f235241a754e1d63f8e995,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: FloatData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &285105461
 GameObject:
   m_ObjectHideFlags: 0

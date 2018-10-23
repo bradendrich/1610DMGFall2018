@@ -8,7 +8,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 444ee8b34995ac5439c32d92a84ded65, type: 3}
-  m_Name: AddMoney
+  m_Script: {fileID: 11500000, guid: 6a59ed017f1abe74ca4c3d0d5e392b9e, type: 3}
+  m_Name: Ammo Total
   m_EditorClassIdentifier: 
-  Data: {fileID: 11400000, guid: ba031fcf58f235241a754e1d63f8e995, type: 2}
+  Value: 10
