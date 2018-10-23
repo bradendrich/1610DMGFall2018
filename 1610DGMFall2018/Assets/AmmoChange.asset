@@ -9,6 +9,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 444ee8b34995ac5439c32d92a84ded65, type: 3}
-  m_Name: Add Ammo
+  m_Name: AmmoChange
   m_EditorClassIdentifier: 
-  Data: {fileID: 0}
+  Data: {fileID: 11400000, guid: ccf6d8fd3f16212448cb4e0189941141, type: 2}
