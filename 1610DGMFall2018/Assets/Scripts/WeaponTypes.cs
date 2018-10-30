@@ -2,7 +2,7 @@
 {
     public enum WeaponClasses
     {
-        Machine Gun,
+        MachineGun,
         Bazooka,
         Crossbow
     }
