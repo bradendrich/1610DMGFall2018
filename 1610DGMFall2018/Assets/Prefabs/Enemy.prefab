@@ -23,9 +23,8 @@ GameObject:
   - component: {fileID: 23388756612987042}
   - component: {fileID: 195998049831143132}
   - component: {fileID: 114469056878262490}
-  - component: {fileID: 114681918338126198}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,19 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f3321d68ef58354da2cdbc4287bd582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Destination: {fileID: 0}
---- !u!114 &114681918338126198
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1927306908503304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74d7fe91ec2269a42acc91795e37959c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  instance: {fileID: 1468315729435648, guid: 737198dc8e8108c418eb34fa71a8fce2, type: 2}
+  Destination: {fileID: 1000452548389078, guid: a308fb147ab22904187b67195060bce8,
+    type: 2}
 --- !u!195 &195998049831143132
 NavMeshAgent:
   m_ObjectHideFlags: 1

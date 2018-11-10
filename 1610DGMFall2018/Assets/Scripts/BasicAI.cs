@@ -4,7 +4,7 @@ using UnityEngine;
 public class BasicAI : MonoBehaviour
 {
     private NavMeshAgent agent;
-    public Transform Destination;
+    public GameObject Destination;
 
     void Start ()
     {
@@ -13,6 +13,6 @@ public class BasicAI : MonoBehaviour
 
     void Update ()
     {
-        if (Destination != null) agent.destination = Destination.position;
+        if (Destination != null) agent.destination = Destination.transform.position;
 	}
 }
