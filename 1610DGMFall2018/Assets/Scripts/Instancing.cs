@@ -8,7 +8,7 @@ public class Instancing : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.X))
+        if (Input.GetMouseButtonDown(0))
         {
             Instantiate(instance, transform.position, transform.rotation);
         }
