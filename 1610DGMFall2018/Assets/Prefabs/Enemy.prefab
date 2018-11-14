@@ -96,8 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f3321d68ef58354da2cdbc4287bd582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Destination: {fileID: 4851695900097588, guid: a308fb147ab22904187b67195060bce8,
-    type: 2}
+  Destination: {fileID: 0}
+  Action: {fileID: 11400000, guid: a617196099589c5499a53e2b1f85cce8, type: 2}
 --- !u!195 &195430946677871592
 NavMeshAgent:
   m_ObjectHideFlags: 1
