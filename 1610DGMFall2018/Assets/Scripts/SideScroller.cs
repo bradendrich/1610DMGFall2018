@@ -18,17 +18,15 @@ public class SideScroller : MonoBehaviour
 
     void Update()
     {
+        position.Set(MoveSpeed * Input.GetAxis("Horizontal"), 0, 0);
+        position = transform.TransformDirection(position);
         if (controller.isGrounded)
         {
-            position.Set(MoveSpeed * Input.GetAxis("Horizontal"), 0, 0);
-            position = transform.TransformDirection(position);
-
             if (Input.GetButton("Jump"))
             {
                 position.y = JumpSpeed;
             }
         }
-
         position.y -= Gravity * Time.deltaTime;
         controller.Move(position * Time.deltaTime);
     }
