@@ -10,7 +10,7 @@ public class Instancing : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Instantiate(instance, transform.position, transform.rotation);
+            Instantiate(instance, transform.position, Quaternion.identity);
         }
     }
 }
