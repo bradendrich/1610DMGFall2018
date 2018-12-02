@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 212646376271615350}
   - component: {fileID: 143460801521728684}
   - component: {fileID: 114218378819061100}
+  - component: {fileID: 114570107750995712}
   m_Layer: 9
   m_Name: Player 1
   m_TagString: Untagged
@@ -52,7 +53,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1380408379534206}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 7.3, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4613789826676594}
@@ -86,6 +87,34 @@ MonoBehaviour:
   Gravity: 9.81
   MoveSpeed: 3
   JumpSpeed: 7
+--- !u!114 &114570107750995712
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1857044166122196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b49d5d0366b433e4687a26c3d5484731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Death:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 65016ae4ca2f8a842940e476da360d62, type: 2}
+        m_MethodName: SubtractValueToObj
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 58f2446a48ae72d4481f288e71164274,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: FloatData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114933858814135612
 MonoBehaviour:
   m_ObjectHideFlags: 1

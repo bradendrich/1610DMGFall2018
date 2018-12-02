@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UponCollision : MonoBehaviour
+public class UponTrigger : MonoBehaviour
 {
 
 	void Start ()

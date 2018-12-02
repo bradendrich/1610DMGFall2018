@@ -1,11 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using UnityEngine.Events;
 using UnityEngine;
 
-public class UponTrigger : MonoBehaviour
+public class UponCollision : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    public UnityEvent Death;
+
+    private void OnCollisionEnter()
     {
-        Destroy(gameObject);
+        Death.Invoke();
     }
 }

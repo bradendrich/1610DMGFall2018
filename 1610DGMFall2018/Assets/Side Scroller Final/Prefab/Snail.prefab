@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4330503733888380}
   - component: {fileID: 212766637213627770}
   - component: {fileID: 195500986710062226}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Snail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4073249364214276}
   - component: {fileID: 114657700562111574}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Snail mouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
