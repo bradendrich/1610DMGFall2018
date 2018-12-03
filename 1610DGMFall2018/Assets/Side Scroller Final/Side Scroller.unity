@@ -113,6 +113,23 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &70499111 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1180143040808838, guid: 23592ccdb6349494eadaeba809879f2b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1023362362}
+--- !u!65 &70499114
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 70499111}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 30.239998, y: 20.4, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &283176329
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,7 +301,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3b0871c0e950afc4b9c42274bba93595, type: 3}
-  m_Color: {r: 0.735849, g: 0.6067113, b: 0.47552508, a: 1}
+  m_Color: {r: 0.909391, g: 0.9245283, b: 0.44045925, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -441,11 +458,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4330503733888380, guid: 23592ccdb6349494eadaeba809879f2b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.36
+      value: -3.976
       objectReference: {fileID: 0}
     - target: {fileID: 4330503733888380, guid: 23592ccdb6349494eadaeba809879f2b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.46
+      value: -1.201
       objectReference: {fileID: 0}
     - target: {fileID: 4330503733888380, guid: 23592ccdb6349494eadaeba809879f2b, type: 2}
       propertyPath: m_LocalPosition.z
@@ -481,15 +498,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4330503733888380, guid: 23592ccdb6349494eadaeba809879f2b, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.19346589
+      value: 0.21880993
       objectReference: {fileID: 0}
     - target: {fileID: 4330503733888380, guid: 23592ccdb6349494eadaeba809879f2b, type: 2}
       propertyPath: m_LocalScale.y
-      value: 0.19346589
+      value: 0.21880993
       objectReference: {fileID: 0}
     - target: {fileID: 4330503733888380, guid: 23592ccdb6349494eadaeba809879f2b, type: 2}
       propertyPath: m_LocalScale.z
-      value: 0.19346589
+      value: 0.21880993
+      objectReference: {fileID: 0}
+    - target: {fileID: 1180143040808838, guid: 23592ccdb6349494eadaeba809879f2b, type: 2}
+      propertyPath: m_TagString
+      value: Enemies
+      objectReference: {fileID: 0}
+    - target: {fileID: 4073249364214276, guid: 23592ccdb6349494eadaeba809879f2b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -18.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4073249364214276, guid: 23592ccdb6349494eadaeba809879f2b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4.3
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 195500986710062226, guid: 23592ccdb6349494eadaeba809879f2b, type: 2}
@@ -624,6 +653,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1857044166122196, guid: 7657d42763c883a4d9f6023b33921d22, type: 2}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1857044166122196, guid: 7657d42763c883a4d9f6023b33921d22, type: 2}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []

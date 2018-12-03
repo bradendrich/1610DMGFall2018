@@ -10,6 +10,7 @@ public class SideScroller : MonoBehaviour
     public float MoveSpeed = 3.0f;
     public float JumpSpeed = 3.00f;
     private Vector3 position;
+    private Vector3 rotation;
 
     void Start()
     {
