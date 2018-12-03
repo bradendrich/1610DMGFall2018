@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114314530980547072}
   - component: {fileID: 212156633986391572}
   - component: {fileID: 65367712542441466}
+  - component: {fileID: 114218730720252866}
   m_Layer: 10
   m_Name: Bullet
   m_TagString: Untagged
@@ -82,6 +83,35 @@ ConstantForce:
   m_RelativeForce: {x: 20, y: 0, z: 0}
   m_Torque: {x: 0, y: 0, z: 0}
   m_RelativeTorque: {x: 0, y: 0, z: 0}
+--- !u!114 &114218730720252866
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1468315729435648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b49d5d0366b433e4687a26c3d5484731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Killed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 91319216bc8f0d1419bc93cb0fc7b123, type: 2}
+        m_MethodName: AddValueToObj
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 2ea3e0192fa20704bb362f9b8e2129e6,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: FloatData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  TotalEnemiesKilled: {fileID: 11400000, guid: 0afd65e255965544da4372d1691f4324, type: 2}
 --- !u!114 &114314530980547072
 MonoBehaviour:
   m_ObjectHideFlags: 1

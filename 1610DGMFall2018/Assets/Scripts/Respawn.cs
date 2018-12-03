@@ -11,7 +11,7 @@ public class Respawn : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
-		
+        Lives.Value = 3;
 	}
 	
 	// Update is called once per frame

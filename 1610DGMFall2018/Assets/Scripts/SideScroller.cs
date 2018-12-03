@@ -19,11 +19,10 @@ public class SideScroller : MonoBehaviour
 
     void Update()
     {
-        //position.Set(MoveSpeed * Input.GetAxis("Horizontal"), 0, 0);
+
         position.x = MoveSpeed * Input.GetAxis("Horizontal");
         position = transform.TransformDirection(position);
-        //rotation.Set(0, Input.GetAxis("Horizontal"), 0);
-        //transform.Rotate(rotation);
+
         if (controller.isGrounded)
         {
             if (Input.GetButton("Jump"))
