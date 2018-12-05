@@ -837,6 +837,11 @@ Prefab:
       propertyPath: Shoot.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114570107750995712, guid: 7657d42763c883a4d9f6023b33921d22,
+        type: 2}
+      propertyPath: Killed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4613789826676594, guid: 7657d42763c883a4d9f6023b33921d22, type: 2}
       propertyPath: m_LocalPosition.x
       value: -12.75
@@ -905,7 +910,40 @@ Prefab:
       value: 
       objectReference: {fileID: 11400000, guid: 4a1c55b72e7ab2b458f93673cdeb123b,
         type: 2}
-    m_RemovedComponents: []
+    - target: {fileID: 114570107750995712, guid: 7657d42763c883a4d9f6023b33921d22,
+        type: 2}
+      propertyPath: Killed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114570107750995712, guid: 7657d42763c883a4d9f6023b33921d22,
+        type: 2}
+      propertyPath: Killed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114570107750995712, guid: 7657d42763c883a4d9f6023b33921d22,
+        type: 2}
+      propertyPath: Killed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: d98720f2988e2ce4c9f3f34088106668,
+        type: 2}
+    - target: {fileID: 114570107750995712, guid: 7657d42763c883a4d9f6023b33921d22,
+        type: 2}
+      propertyPath: Killed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SubtractValueToObj
+      objectReference: {fileID: 0}
+    - target: {fileID: 114570107750995712, guid: 7657d42763c883a4d9f6023b33921d22,
+        type: 2}
+      propertyPath: Killed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: FloatData, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114570107750995712, guid: 7657d42763c883a4d9f6023b33921d22,
+        type: 2}
+      propertyPath: Killed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 65016ae4ca2f8a842940e476da360d62,
+        type: 2}
+    m_RemovedComponents:
+    - {fileID: 114570107750995712, guid: 7657d42763c883a4d9f6023b33921d22, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 7657d42763c883a4d9f6023b33921d22, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1679175968

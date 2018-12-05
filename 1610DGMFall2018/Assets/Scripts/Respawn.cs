@@ -11,12 +11,16 @@ public class Respawn : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
-        Lives.Value = 3;
+        
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
+        if (ActivePlayer == null)
+        {
+            Lives.Value = Lives.Value - 1;
+        }
         if (ActivePlayer == null && Lives.Value > 0)
         {
             //TODO MAKE IT RESPAWN INSTEAD OF RELOAD
@@ -25,9 +29,3 @@ public class Respawn : MonoBehaviour
         }
     } 
 }
-
-
-//Instantiate(PlayerDefault, SpawnPoint);
-// Player.transform.position = SpawnPoint.transform.position;
-//Instead of making the player respawn, I have made it so that the scene will just reload
-//I would still like to learn how to make the character just respawn there instead of reloading

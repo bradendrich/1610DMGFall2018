@@ -7,7 +7,7 @@ public class UponCollision : MonoBehaviour
     public FloatData TotalEnemiesKilled;
     private void Start()
     {
-        TotalEnemiesKilled.Value = 0;
+
     }
 
     private void OnCollisionEnter()
