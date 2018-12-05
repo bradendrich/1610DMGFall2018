@@ -11,6 +11,7 @@ public class SideScroller : MonoBehaviour
     public float JumpSpeed = 3.00f;
     private Vector3 position;
     private Vector3 rotation;
+    private bool flipped;
 
     void Start()
     {
@@ -19,9 +20,20 @@ public class SideScroller : MonoBehaviour
 
     void Update()
     {
-
-        position.x = MoveSpeed * Input.GetAxis("Horizontal");
         position = transform.TransformDirection(position);
+        position.x = MoveSpeed * Input.GetAxis("Horizontal");
+
+        if (Input.GetKey(KeyCode.A) && flipped == false)
+        {
+            transform.Rotate(0, -180, 0);
+            flipped = true;
+        }
+
+        if (Input.GetKey(KeyCode.D) && flipped == true)
+        {
+            transform.Rotate(0, 180, 0);
+            flipped = false;
+        }
 
         if (controller.isGrounded)
         {

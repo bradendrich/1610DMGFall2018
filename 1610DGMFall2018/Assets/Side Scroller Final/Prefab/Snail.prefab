@@ -20,10 +20,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4330503733888380}
   - component: {fileID: 212766637213627770}
-  - component: {fileID: 195500986710062226}
+  - component: {fileID: 65538308066212476}
+  - component: {fileID: 114244141218117938}
+  - component: {fileID: 195459504100739782}
   m_Layer: 13
   m_Name: Snail
-  m_TagString: Untagged
+  m_TagString: Enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51,7 +53,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1694906998627654}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.862555, y: -6.1, z: -2.2427158}
+  m_LocalPosition: {x: -18.2, y: -4.3, z: -2.2427158}
   m_LocalScale: {x: 5.780347, y: 5.780347, z: 5.780347}
   m_Children: []
   m_Father: {fileID: 4330503733888380}
@@ -64,13 +66,39 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1180143040808838}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.36, y: -1.64, z: 0}
-  m_LocalScale: {x: 0.173, y: 0.173, z: 0.173}
+  m_LocalPosition: {x: 17.22, y: -2.74, z: 0}
+  m_LocalScale: {x: 0.21880993, y: 0.21880993, z: 0.21880993}
   m_Children:
   - {fileID: 4073249364214276}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &65538308066212476
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1180143040808838}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 30.239998, y: 20.4, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114244141218117938
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1180143040808838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f3321d68ef58354da2cdbc4287bd582, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Destination: {fileID: 4613789826676594, guid: 7657d42763c883a4d9f6023b33921d22,
+    type: 2}
+  Action: {fileID: 11400000, guid: 9cee8d50923093d4293d5eb82506a9bf, type: 2}
 --- !u!114 &114657700562111574
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -84,7 +112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Instance: {fileID: 1258129793108576, guid: e0fe0e2755fde8d4485ce529a8119b62, type: 2}
   Seconds: 3
---- !u!195 &195500986710062226
+--- !u!195 &195459504100739782
 NavMeshAgent:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,7 +124,7 @@ NavMeshAgent:
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 0
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1

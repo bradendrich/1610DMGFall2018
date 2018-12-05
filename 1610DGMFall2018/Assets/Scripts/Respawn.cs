@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class Respawn : MonoBehaviour
@@ -7,20 +8,22 @@ public class Respawn : MonoBehaviour
     public GameObject PlayerDefault;
     public Transform SpawnPoint;
     public FloatData Lives;
+    public UnityEvent Death;
 
 	// Use this for initialization
 	void Start ()
     {
-        
+
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
-        if (ActivePlayer == null)
+        if (ActivePlayer == null && Lives.Value != 0)
         {
-            Lives.Value = Lives.Value - 1;
+            Death.Invoke();
         }
+
         if (ActivePlayer == null && Lives.Value > 0)
         {
             //TODO MAKE IT RESPAWN INSTEAD OF RELOAD
