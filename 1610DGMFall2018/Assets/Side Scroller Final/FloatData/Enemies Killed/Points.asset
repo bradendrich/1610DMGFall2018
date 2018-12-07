@@ -9,6 +9,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a59ed017f1abe74ca4c3d0d5e392b9e, type: 3}
-  m_Name: Enemy Died
+  m_Name: Points
   m_EditorClassIdentifier: 
-  Value: 1
+  Value: 10
