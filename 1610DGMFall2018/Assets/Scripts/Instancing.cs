@@ -1,9 +1,9 @@
 ﻿using UnityEngine.Events;
 using UnityEngine;
 
-public class Instancing : MonoBehaviour
+public class Instancing : SideScroller
 {
-    public GameObject instance;
+    public GameObject Instance;
     public FloatData Ammo;
     public UnityEvent Shoot;
 
@@ -15,10 +15,16 @@ public class Instancing : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetMouseButtonDown(0) && Ammo.Value != 0)
+        if (Input.GetMouseButtonDown(0) && Ammo.Value != 0 /*&& Flipped != true*/)
         {
             Shoot.Invoke();
-            Instantiate(instance, transform.position, Quaternion.identity);
+            Instantiate(Instance, transform.position, Quaternion.identity);
         }
+        /*else
+        {
+            Shoot.Invoke();
+            Instantiate(Instance);
+            GetComponent<Rigidbody>(ConstantForce.Instantiate(Instance);
+        }*/
     }
 }
